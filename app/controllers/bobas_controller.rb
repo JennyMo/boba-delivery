@@ -1,6 +1,6 @@
 class BobasController < ApplicationController
 	def create
-		@boba = Boba.new(params[:sugar, :drink, :toppings, :ice])
+		@boba = Boba.new(params[:drink])
 	end
 
 	def viewMenu
