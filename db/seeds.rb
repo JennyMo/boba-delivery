@@ -5,7 +5,4 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-boba1 = Boba.create([{drink: 'Green Milk Tea'}])
-boba2 = Boba.create([{drink: 'Black Milk Tea'}])
-boba3 = Boba.create([{drink: 'Mango Green Tea'}])
-boba4 = Boba.create([{drink: 'Passion Fruit Green Tea'}])
+
