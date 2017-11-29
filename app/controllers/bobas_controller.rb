@@ -1,4 +1,7 @@
 class BobasController < ApplicationController
+	def new
+	end
+	
 	def create
 		@boba = Boba.new(boba_params)
 	end

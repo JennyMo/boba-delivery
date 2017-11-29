@@ -19,4 +19,6 @@ Rails.application.routes.draw do
 	constraints Clearance::Constraints::SignedOut.new do
 	  root to: 'pages#index'
 	end
+
+  get '/bobas/new', to: 'bobas#new'
 end
