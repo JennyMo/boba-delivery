@@ -1,8 +1,30 @@
+<%= form_tag do %>
 <h1>What would you like to order today?</h1>
-<h2>Menu:</h2>
-<h3>Black Milk Tea</h3>
-<h3>Green Milk Tea</h3>
-<h3>Black Tea</h3>
-<h3>Green Tea</h3>
-<h3>Mango Green Tea</h3>
-<h3>Passion Fruit Green Tea</h3>
+<h2>Black Milk Tea</h2>
+<h3>Toppings</h3>
+<div>
+<%= check_box_tag "Boba", '1', checked=false, id:"boba" %> Boba
+<%= check_box_tag "Lychee Jelly", '2', checked=false, id:"boba" %> Lychee Jelly
+<%= check_box_tag "Pudding", '2', checked=false, id:"boba" %> Pudding
+</div>
+<h3>Ice Levels</h3>
+<select name="user[role_id]">
+  <option value="">Please select</option>
+  <option value="1" selected="selected">100%</option>
+  <option value="2">75%</option>
+  <option value="2">50%</option>
+</select>
+<h3>Sugar Levels</h3>
+<select name="user[role_id]">
+  <option value="">Please select</option>
+  <option value="1" selected="selected">100%</option>
+  <option value="2">75%</option>
+  <option value="2">50%</option>
+</select>
+<h2>Green Milk Tea</h2>
+<h2>Black Tea</h2>
+<h2>Green Tea</h2>
+<h2>Mango Green Tea</h2>
+<h2>Passion Fruit Green Tea</h2>
+<%= submit_tag("Submit") %>
+<% end %>
