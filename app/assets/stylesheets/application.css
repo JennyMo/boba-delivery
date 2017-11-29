@@ -3,3 +3,6 @@
  *= require style
  *= require_self
 */
+
+@import "bootstrap-sprockets"
+@import "bootstrap"
