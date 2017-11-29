@@ -1,0 +1,17 @@
+<%= form_tag bobas_new_path do %>
+  <%= label_tag(:drink, "Drink") %>
+  <%= text_field_tag(:drink) %>
+
+  <%= label_tag(:ice, "Ice Level") %>
+  <%= text_field_tag(:ice, nil, placeholder: @placeholder_course) %>
+
+  <%= label_tag(:topping, "Topping") %>
+  <%= text_field_tag(:topping) %>
+
+  <%= label_tag(:sugar, "Sugar Level") %>
+  <%= text_field_tag(:sugar) %>
+
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+
+  <%= submit_tag("Submit Drink") %>
+<% end %>
