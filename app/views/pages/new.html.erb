@@ -1,8 +1,17 @@
-<%= form_tag do %>
-<%= link_to 'New Todo', "/", class: 'btn btn-primary btn-sm' %>
 
-<h1>What would you like to order today?</h1>
-<h2>Black Milk Tea</h2>
+
+<%= form_tag do %>
+
+
+
+<center>Welcome to Boba Delivery! </center>
+
+<h3 style="color:rgba(255, 99, 71, 0.5);">What would you like to order today?</h3>
+
+<%= link_to 'Black Milk Tea', "/", class: 'btn btn-primary btn-lg' %>
+
+
+
 <h3>Toppings</h3>
 <div>
 <%= check_box_tag "Boba", '1', checked=false, id:"boba" %> Boba
@@ -38,11 +47,125 @@
 
 
 
+<h2>
+<%= link_to 'Green Milk Tea', "/", class: 'btn btn-primary btn-lg' %>
 
-<h2>Green Milk Tea</h2>
-<h2>Black Tea</h2>
-<h2>Green Tea</h2>
-<h2>Mango Green Tea</h2>
-<h2>Passion Fruit Green Tea</h2>
+
+<h3>Toppings</h3>
+<div>
+<%= check_box_tag "Boba", '1', checked=false, id:"boba" %> Boba
+<%= check_box_tag "Lychee Jelly", '2', checked=false, id:"boba" %> Lychee Jelly
+<%= check_box_tag "Pudding", '2', checked=false, id:"boba" %> Pudding
+</div>
+<h3>Ice Levels</h3>
+<select name="user[role_id]">
+  <option value="">Please select</option>
+  <option value="1" selected="selected">100%</option>
+  <option value="2">75%</option>
+  <option value="2">50%</option>
+  <option value="2">25%</option>
+  <option value="2">0%</option>
+</select>
+<h3>Sugar Levels</h3>
+<select name="user[role_id]">
+  <option value="">Please select</option>
+  <option value="1" selected="selected">100%</option>
+  <option value="2">75%</option>
+  <option value="2">50%</option>
+  <option value="2">25%</option>
+  <option value="2">0%</option>
+</select>
+
+
+<h3>Temperature</h3>
+<select name="user[role_id]">
+  <option value="">Please select</option>
+  <option value="1" selected="selected">Cold</option>
+  <option value="2">Hot</option>
+</select>
+</h2>
+
+
+<h2>
+<%= link_to 'Mango Green Tea', "/", class: 'btn btn-primary btn-lg' %>
+
+
+<h3>Toppings</h3>
+<div>
+<%= check_box_tag "Boba", '1', checked=false, id:"boba" %> Boba
+<%= check_box_tag "Lychee Jelly", '2', checked=false, id:"boba" %> Lychee Jelly
+<%= check_box_tag "Pudding", '2', checked=false, id:"boba" %> Pudding
+</div>
+<h3>Ice Levels</h3>
+<select name="user[role_id]">
+  <option value="">Please select</option>
+  <option value="1" selected="selected">100%</option>
+  <option value="2">75%</option>
+  <option value="2">50%</option>
+  <option value="2">25%</option>
+  <option value="2">0%</option>
+</select>
+<h3>Sugar Levels</h3>
+<select name="user[role_id]">
+  <option value="">Please select</option>
+  <option value="1" selected="selected">100%</option>
+  <option value="2">75%</option>
+  <option value="2">50%</option>
+  <option value="2">25%</option>
+  <option value="2">0%</option>
+</select>
+
+
+<h3>Temperature</h3>
+<select name="user[role_id]">
+  <option value="">Please select</option>
+  <option value="1" selected="selected">Cold</option>
+  <option value="2">Hot</option>
+</select>
+</h2>
+
+
+
+<h2>
+
+<%= link_to 'Passion Fruit Green Tea', "/", class: 'btn btn-primary btn-lg' %>
+
+
+<h3>Toppings</h3>
+<div>
+<%= check_box_tag "Boba", '1', checked=false, id:"boba" %> Boba
+<%= check_box_tag "Lychee Jelly", '2', checked=false, id:"boba" %> Lychee Jelly
+<%= check_box_tag "Pudding", '2', checked=false, id:"boba" %> Pudding
+</div>
+<h3>Ice Levels</h3>
+<select name="user[role_id]">
+  <option value="">Please select</option>
+  <option value="1" selected="selected">100%</option>
+  <option value="2">75%</option>
+  <option value="2">50%</option>
+  <option value="2">25%</option>
+  <option value="2">0%</option>
+</select>
+<h3>Sugar Levels</h3>
+<select name="user[role_id]">
+  <option value="">Please select</option>
+  <option value="1" selected="selected">100%</option>
+  <option value="2">75%</option>
+  <option value="2">50%</option>
+  <option value="2">25%</option>
+  <option value="2">0%</option>
+</select>
+
+
+<h3>Temperature</h3>
+<select name="user[role_id]">
+  <option value="">Please select</option>
+  <option value="1" selected="selected">Cold</option>
+  <option value="2">Hot</option>
+</select>
+</h2>
+
+<h3>
 <%= submit_tag("Submit") %>
 <% end %>
+</h3>
