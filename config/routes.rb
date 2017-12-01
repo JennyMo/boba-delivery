@@ -13,12 +13,11 @@ Rails.application.routes.draw do
   get "/sign_up" => "clearance/users#new", as: "sign_up"
 
 	constraints Clearance::Constraints::SignedIn.new do
-	  root to: 'pages#new', as: :signed_in_root
+	  root to: 'orders#new', as: :signed_in_root
+    post '/', to: 'bobas#show'
 	end
 
 	constraints Clearance::Constraints::SignedOut.new do
 	  root to: 'pages#index'
 	end
-
-  get '/bobas/new', to: 'bobas#new'
 end

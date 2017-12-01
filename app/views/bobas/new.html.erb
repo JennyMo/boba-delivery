@@ -1,15 +1,24 @@
+<h3>What would you like to order today?</h3>
+<h4>Black Milk Tea</h4>
+<h4>Green Milk Tea</h4>
+<h4>Black Tea</h4>
+<h4>Green Tea</h4>
+<h4>Mango Green Tea</h4>
+<h4>Passion Fruit Green Tea</h4>
+
 <%= form_tag bobas_new_path do %>
   <%= label_tag(:drink, "Drink") %>
   <%= text_field_tag(:drink) %>
 
   <%= label_tag(:ice, "Ice Level") %>
-  <%= text_field_tag(:ice, nil, placeholder: @placeholder_course) %>
+  <%= text_field_tag(:ice) %>
 
   <%= label_tag(:topping, "Topping") %>
   <%= text_field_tag(:topping) %>
 
   <%= label_tag(:sugar, "Sugar Level") %>
   <%= text_field_tag(:sugar) %>
+  <%= debug params %>
 
   <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
 
